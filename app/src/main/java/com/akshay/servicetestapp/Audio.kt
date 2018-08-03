@@ -19,7 +19,7 @@ class Audio:Service()
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         player!!.start()
         player!!.pause()
-        return START_REDELIVER_INTENT
+        return START_STICKY
     }
 
     override fun onDestroy() {
